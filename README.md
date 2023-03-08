@@ -10,4 +10,3 @@ You can find the tutorial here - https://gaurangtorvekar.medium.com/tutorial-for
 
 [Scroll](https://scroll.io/) is a zkEVM-based zkRollup on Ethereum that enables native compatibility for existing Ethereum applications and tools. It is a L2 solution on top of Ethereum, meant to scale the network and cater to the mainstream audience when blockchain adoption grows by leaps and bounds over the next few years.
 
-You can get the Scroll TSETH through the Scroll Faucet [here](https://scroll.io/prealpha/faucet).
