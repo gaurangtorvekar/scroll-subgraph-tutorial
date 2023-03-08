@@ -1,0 +1,30 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: NaiveWallet
+    network: scrollAlpha1
+    source:
+      address: "0xfA205A82715F144096B75Ccc4C543A8a2D4CcfaF"
+      abi: NaiveWallet
+      startBlock: 213915
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Deposit
+        - Transfer
+        - Withdraw
+      abis:
+        - name: NaiveWallet
+          file: ./abis/NaiveWallet.json
+      eventHandlers:
+        - event: Deposit(indexed address,indexed uint256)
+          handler: handleDeposit
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+        - event: Withdraw(indexed address,indexed uint256)
+          handler: handleWithdraw
+      file: ./src/naive-wallet.ts

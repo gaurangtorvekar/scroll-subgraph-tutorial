@@ -1,0 +1,15 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+
+#Subgraph files
+scroll-subgraph/build
+scroll-subgraph/generated
+scroll-subgraph/node_modules
