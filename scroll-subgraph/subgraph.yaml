@@ -4,7 +4,7 @@ schema:
 dataSources:
   - kind: ethereum
     name: NaiveWallet
-    network: scrollAlpha1
+    network: scrollAlpha
     source:
       address: "0xfA205A82715F144096B75Ccc4C543A8a2D4CcfaF"
       abi: NaiveWallet
